@@ -1,0 +1,21 @@
+{
+  "name": "es6-budo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "./node_modules/.bin/budo src/index.js:bundle.js  --open --live -- -t babelify",
+    "build": "./node_modules/.bin/browserify src/index.js > bundle.js -t babelify"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-preset-env": "^1.6.0",
+    "babelify": "^7.3.0",
+    "browserify": "^14.4.0",
+    "budo": "^10.0.3",
+    "es2040": "^1.2.6"
+  }
+}
